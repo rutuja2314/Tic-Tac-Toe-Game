@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@300&family=Lora:wght@500&family=Rajdhani:wght@600&family=Ubuntu&display=swap');
+
+*{ margin: 0; padding: 0;}
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+.body{
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    align-content: flex-start; 
+    min-height: 100vh;
+    font-style: normal;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 15px;  
+}
+
+.font-style{
+    font-family: 'Rajdhani', sans-serif;
+}
+
+.head{
+    padding-top:10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 25px;
+    background-color: azure;
+}
+
+.classmain{
+    background-color: aliceblue;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    height: 73vh;
+}
+
+.container{
+    left:50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.clearfix:after{
+    content:"";
+    display:table;
+    clear: both;
+}
+
+.board{
+    position:relative;
+    width:22em;
+    font-weight:700;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+
+p{
+    font-weight: 400;
+}
+
+h3{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px 0;
+}
+.row{
+    float: left;
+    
+}
+
+.row:first-child .square{
+    border-top:0px;
+}
+
+.square{
+    color: rgb(92, 200, 243);
+    border-color: black;
+    font-size: 6em;
+    width: 1.2em;
+    height:1.2em;
+    line-height:1.2em;
+    float:left;
+    border-style:solid;
+    border-width:1px 1px 0 0;
+    text-align:center;
+    cursor: default;
+}
+
+.square:last-child{
+    border-right: 1px;
+}
+
+.x-marker{
+    color:rgb(0, 17, 255);
+}
+
+.o-marker{
+    color:rgb(245, 144, 13);
+}
+
+.modal-container{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: none;
+}
+
+.modal{
+    text-align:center;
+    background-color: chocolate;
+    color: white;
+    font-size: 1em;
+    height: 100%;
+    padding: 30px;
+}
+
+.choose-modal span{
+    line-height: 1.5em;
+    width: 1.5em;
+    height: 1.5em;
+    font-size: 3em;
+}
+
+.end-game-modal{
+    display:none;
+}
+
+.end-game-modal span{
+    color:white;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    font-size: 1.3em;
+    padding: 0.2em 0.4em;
+}
+
+.button-area span{
+    display: inline-block;
+    background-color: rgb(50, 108, 155);
+    margin: 0.2em 0.2em 0 0.2em;
+}
+
+.button-area span:hover{
+    cursor:pointer;
+    background-color: blue;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Rajdhani', sans-serif;
+}

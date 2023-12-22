@@ -1,0 +1,36 @@
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.cd__intro{
+    padding-top:10px;
+    margin-bottom: 15px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+    background-color: antiquewhite;
+
+}
+
+.down:before{content: "\f019"}
+.back:before{content:"\f112"}
+
+.cd__main{
+    background-color: aliceblue;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position:relative;
+    height: 69vh;
+    width: 100%;
+}
+
+@media only screen and (min-width: 1360px){
+    .cd__main{
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto; 
+      padding: 24px;
+    }
+}
